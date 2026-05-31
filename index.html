@@ -1,98 +1,218 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deep Learning Specialization Certificates</title>
+
+  <title>Deep Learning Specialization Certificates | Jainil Trivedi</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #f7f8fa;
-      color: #222;
       margin: 0;
-      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px;
     }
 
-    h1 {
-      margin-bottom: 8px;
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .subtitle {
-      color: #666;
-      margin-bottom: 28px;
+    .header h1 {
+      margin: 0;
+      font-size: 34px;
+      color: #111827;
     }
 
-    .certificate {
-      border: 1px solid #e5e7eb;
+    .header p {
+      margin-top: 10px;
+      font-size: 17px;
+      color: #4b5563;
+    }
+
+    .profile-box {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      text-align: center;
+    }
+
+    .profile-box strong {
+      color: #111827;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .cert-card {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+
+    .cert-preview {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+      background: #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .cert-content {
       padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 18px;
-      background: #fafafa;
     }
 
-    .certificate h2 {
-      margin-top: 0;
+    .cert-content h2 {
+      margin: 0 0 8px;
       font-size: 20px;
+      color: #111827;
     }
 
-    a {
-      color: #2563eb;
+    .cert-content p {
+      margin: 0 0 16px;
+      font-size: 15px;
+      color: #4b5563;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .btn:hover {
+      background: #1d4ed8;
     }
 
     .footer {
-      margin-top: 28px;
+      margin-top: 36px;
+      text-align: center;
       font-size: 14px;
-      color: #777;
+      color: #6b7280;
+    }
+
+    @media (max-width: 768px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 28px;
+      }
+
+      .cert-preview {
+        height: 240px;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Deep Learning Specialization Certificates</h1>
-    <p class="subtitle">DeepLearning.AI | Instructor: Andrew Ng</p>
+  <main class="page">
+    <section class="header">
+      <h1>Deep Learning Specialization Certificates</h1>
+      <p>DeepLearning.AI | Instructor: Andrew Ng</p>
+    </section>
 
-    <div class="certificate">
-      <h2>Certificate 1: Neural Networks and Deep Learning</h2>
-      <p>Part of the Deep Learning Specialization by DeepLearning.AI.</p>
-      <a href="https://learn.deeplearning.ai/certificates/c3ee80e5-9bf5-43af-9340-f9fbf2bdec00?usp=sharing" target="_blank">View Certificate</a>
-    </div>
+    <section class="profile-box">
+      <p>
+        Certificate portfolio of <strong>Jainil Trivedi</strong>, showcasing completed courses from the
+        <strong>Deep Learning Specialization</strong> by DeepLearning.AI.
+      </p>
+    </section>
 
-    <div class="certificate">
-      <h2>Certificate 2: Improving Deep Neural Networks</h2>
-      <p>Part of the Deep Learning Specialization by DeepLearning.AI.</p>
-      <a href="https://learn.deeplearning.ai/certificates/c9a8eaec-0623-4cb0-99dd-74f1a9ea3dd6?usp=sharing" target="_blank">View Certificate</a>
-    </div>
+    <section class="cert-grid">
 
-    <div class="certificate">
-      <h2>Certificate 3: Structuring Machine Learning Projects</h2>
-      <p>Part of the Deep Learning Specialization by DeepLearning.AI.</p>
-      <a href="https://learn.deeplearning.ai/certificates/280b2126-8fcd-4881-870d-991013f296e7?usp=sharing" target="_blank">View Certificate</a>
-    </div>
+      <article class="cert-card">
+        <a href="https://learn.deeplearning.ai/certificates/c3ee80e5-9bf5-43af-9340-f9fbf2bdec00?usp=sharing" target="_blank">
+          <img class="cert-preview" src="assets/neural-networks.png" alt="Neural Networks and Deep Learning Certificate Preview">
+        </a>
+        <div class="cert-content">
+          <h2>Neural Networks and Deep Learning</h2>
+          <p>Completed as part of the Deep Learning Specialization by DeepLearning.AI.</p>
+          <a class="btn" href="https://learn.deeplearning.ai/certificates/c3ee80e5-9bf5-43af-9340-f9fbf2bdec00?usp=sharing" target="_blank">
+            Verify Certificate
+          </a>
+        </div>
+      </article>
 
-    <div class="certificate">
-      <h2>Certificate 4: Sequence Models</h2>
-      <p>Part of the Deep Learning Specialization by DeepLearning.AI.</p>
-      <a href="https://learn.deeplearning.ai/certificates/3015bf72-02aa-42e8-a21e-2a3b786c14d6?usp=sharing" target="_blank">View Certificate</a>
-    </div>
+      <article class="cert-card">
+        <a href="https://learn.deeplearning.ai/certificates/c9a8eaec-0623-4cb0-99dd-74f1a9ea3dd6?usp=sharing" target="_blank">
+          <img class="cert-preview" src="assets/improving-deep-neural-networks.png" alt="Improving Deep Neural Networks Certificate Preview">
+        </a>
+        <div class="cert-content">
+          <h2>Improving Deep Neural Networks</h2>
+          <p>Completed as part of the Deep Learning Specialization by DeepLearning.AI.</p>
+          <a class="btn" href="https://learn.deeplearning.ai/certificates/c9a8eaec-0623-4cb0-99dd-74f1a9ea3dd6?usp=sharing" target="_blank">
+            Verify Certificate
+          </a>
+        </div>
+      </article>
 
-    <div class="footer">
-      Compiled certificate portfolio for resume verification.
-    </div>
-  </div>
+      <article class="cert-card">
+        <a href="https://learn.deeplearning.ai/certificates/280b2126-8fcd-4881-870d-991013f296e7?usp=sharing" target="_blank">
+          <img class="cert-preview" src="assets/structuring-ml-projects.png" alt="Structuring Machine Learning Projects Certificate Preview">
+        </a>
+        <div class="cert-content">
+          <h2>Structuring Machine Learning Projects</h2>
+          <p>Completed as part of the Deep Learning Specialization by DeepLearning.AI.</p>
+          <a class="btn" href="https://learn.deeplearning.ai/certificates/280b2126-8fcd-4881-870d-991013f296e7?usp=sharing" target="_blank">
+            Verify Certificate
+          </a>
+        </div>
+      </article>
+
+      <article class="cert-card">
+        <a href="https://learn.deeplearning.ai/certificates/3015bf72-02aa-42e8-a21e-2a3b786c14d6?usp=sharing" target="_blank">
+          <img class="cert-preview" src="assets/sequence-models.png" alt="Sequence Models Certificate Preview">
+        </a>
+        <div class="cert-content">
+          <h2>Sequence Models</h2>
+          <p>Completed as part of the Deep Learning Specialization by DeepLearning.AI.</p>
+          <a class="btn" href="https://learn.deeplearning.ai/certificates/3015bf72-02aa-42e8-a21e-2a3b786c14d6?usp=sharing" target="_blank">
+            Verify Certificate
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="footer">
+      <p>Compiled certificate portfolio for resume verification.</p>
+    </section>
+  </main>
 </body>
 </html>
+```
